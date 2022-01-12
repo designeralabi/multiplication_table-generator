@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400&family=IBM+Plex+Sans:wght@100;200;300;400;500;600&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family:sans-serif;
+    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Sans', sans-serif;
 }
 
 .main-wrapper{
@@ -12,12 +15,32 @@
     margin: 10% auto;
     transform: translateY(120px);
     position: relative;
+    text-align: center;
+    height: 100vh;
 }
 
 .main-wrapper h1{
-    color:cornflowerblue;
-    margin-bottom: 30px;
+    color:#FF6584;
+    /* margin-bottom: 30px; */
     font-size: 2rem;
+}
+
+.main-wrapper img{
+    width: 256px;
+    height: 145.79px;
+    margin: 20px 0;
+}
+
+#data-cta{
+    color: #575988;
+    font-size: .8rem;
+    margin: 10px 0;
+}
+
+#data-caution{
+    color: #575988;
+    font-size: .7rem;
+    margin-bottom: 20px;
 }
 
 .form-wrapper{
@@ -27,10 +50,11 @@
 
 input[type = "text"]{
     height: 45px;
-    padding: 10px;
-    margin-bottom: 20px;
+    padding: 10px 10px 10px 18px;
+    margin-bottom: 10px;
     outline: none;
-    background-color: rgba(127, 255, 212, 0.2);
+    background-color: #F0EFFF
+    ;
     border: 0;
 }
 
@@ -39,7 +63,7 @@ input[type = "text"]:focus-within{
 }
 
 .output{
-    background-color: aliceblue;
+    background-color: #f0f8ff;
     padding: 10px;
     line-height: 1.5rem;
     text-align: center;
@@ -52,13 +76,16 @@ button[type = "submit"]{
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: rgb(127, 255, 212);
+    background-color: #5D5FEF;
+    ;
     text-transform: uppercase;
     transition: background 1s;
+    color: #fff;
+    font-weight: 600;
 }
 
 button[type = "submit"]:hover{
-    background-color: rgb(75, 218, 170);
+    background-color: #474aee;
 }
 
 button[type = "reset"]{
@@ -68,13 +95,25 @@ button[type = "reset"]{
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: rgb(201, 229, 253);
+    background-color: #FF6584;
     text-transform: uppercase;
     transition: background 1s;
+    color: #fff;
+    font-weight: 600;
 }
 
 ::placeholder{
-    color: rgba(75, 218, 170, 0.5);
+    color: #6C63FF;
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+#author-data{
+    margin: 20px 0;
+}
+
+#author-data:nth-child(1n){
+    font-size: .68rem;
 }
 
 
