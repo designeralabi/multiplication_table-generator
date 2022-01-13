@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400&family=IBM+Plex+Sans:wght@100;200;300;400;500;600&display=swap');
 
+:root{
+    --main-color: #fff;
+    --text-color: #000;
+    --primary-color: #FF6584 ;
+    --secondary-color: #5D5FEF;
+    --secondary-color-hover: #474aee;
+    --secondary-color-dark: #F0EFFF ;
+    --text-mono: 'IBM Plex Mono', monospace;
+    --text-sanSerif: 'IBM Plex Sans', sans-serif;
+}
+
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'IBM Plex Mono', monospace;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: var(--text-sanSerif);
 }
 
 .main-wrapper{
@@ -21,7 +31,6 @@
 
 .main-wrapper h1{
     color:#FF6584;
-    /* margin-bottom: 30px; */
     font-size: 2rem;
 }
 
@@ -54,8 +63,7 @@ input[type = "text"]{
     padding: 10px 10px 10px 18px;
     margin-bottom: 10px;
     outline: none;
-    background-color: #F0EFFF
-    ;
+    background-color: #F0EFFF;
     border: 0;
     border-radius: 5px;
 }
@@ -65,6 +73,7 @@ input[type = "text"]{
     position: absolute;
     top: 10px;
     right: 15px;
+    cursor: pointer;
 }
 
 input[type = "text"]:focus-within{
@@ -85,8 +94,7 @@ button[type = "submit"]{
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: #5D5FEF;
-    ;
+    background-color: #5D5FEF;  
     text-transform: uppercase;
     transition: background 1s;
     color: #fff;
