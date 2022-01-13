@@ -46,6 +46,7 @@
 .form-wrapper{
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 input[type = "text"]{
@@ -56,10 +57,18 @@ input[type = "text"]{
     background-color: #F0EFFF
     ;
     border: 0;
+    border-radius: 5px;
+}
+
+.cancel-Btn{
+    color: #FF6584;
+    position: absolute;
+    top: 10px;
+    right: 15px;
 }
 
 input[type = "text"]:focus-within{
-    border: 1px solid rgb(75, 218, 170);
+    border: 1px solid #5D5FEF;
 }
 
 .output{
@@ -82,6 +91,7 @@ button[type = "submit"]{
     transition: background 1s;
     color: #fff;
     font-weight: 600;
+    border-radius: 5px;
 }
 
 button[type = "submit"]:hover{

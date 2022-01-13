@@ -7,11 +7,11 @@ var msg = '';
 
 form.addEventListener('submit', (evt)=>{
     evt.preventDefault();
-
+    
     var i = userNum.value;
     var by = 1;
     
-    while (i <= 12, by <= 12 ) {
+    while (i <= 12, by <= 100 ) {
         msg += i + ` x ${by} = ` + (i * by + '<br />');
    
         by++;
