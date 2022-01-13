@@ -46,7 +46,7 @@ body{
 .main-wrapper{
     width: 80%;
     max-width: 700px;
-    margin: 5% auto 10%;
+    margin: 3% auto 10%;
     transform: translateY(120px);
     position: relative;
     text-align: center;
