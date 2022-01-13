@@ -1,22 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400&family=IBM+Plex+Sans:wght@100;200;300;400;500;600&display=swap');
 
-:root{
-    --main-color: #fff;
-    --text-color: #000;
-    --primary-color: #FF6584 ;
-    --secondary-color: #5D5FEF;
-    --secondary-color-hover: #474aee;
-    --secondary-color-dark: #F0EFFF ;
-    --text-mono: 'IBM Plex Mono', monospace;
-    --text-sanSerif: 'IBM Plex Sans', sans-serif;
-}
-
 *{
     padding: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
     font-family: var(--text-sanSerif);
+}
+
+:root{
+    --main-color: #fff;
+    --text-heading: #FF6584;
+    --text-color: #575988;
+    --primary-color: #FF6584 ;
+    --secondary-color: #5D5FEF;
+    --secondary-color-hover: #474aee;
+    --secondary-color-light: rgba(240, 239, 255, 0.7);
+    --bg-color: #fff;
+    --text-mono: 'IBM Plex Mono', monospace;
+    --text-sanSerif: 'IBM Plex Sans', sans-serif;
+
+    --main-color-dark: #fff;
+    --text-heading-dark: #F0EFFF;
+    --text-color-dark: #FFFFFF;
+    --secondary-color-dark: #5D5FEF;
+    --secondary-color-light-dark: rgba(240, 239, 255, 1)  ;
+    --bg-color-dark: #27474E;
+}
+
+@media(prefers-color-scheme: dark) {
+    :root{
+        --main-color: var(--main-color-dark);
+        --text-heading: var(--text-heading-dark);
+        --text-color: var(--text-color-dark);
+        --secondary-color: var(--secondary-color-dark);
+        --secondary-color-light: var(--secondary-color-light-dark);
+        --bg-color: var(--bg-color-dark);
+    }
+}
+
+body{
+    background-color: var(--bg-color);
 }
 
 .main-wrapper{
@@ -30,7 +54,7 @@
 }
 
 .main-wrapper h1{
-    color:#FF6584;
+    color: var(--text-heading);
     font-size: 2rem;
 }
 
@@ -41,13 +65,13 @@
 }
 
 #data-cta{
-    color: #575988;
+    color: var(--text-color);
     font-size: .8rem;
     margin: 10px 0;
 }
 
 #data-caution{
-    color: #575988;
+    color: var(--text-color);
     font-size: .7rem;
     margin-bottom: 20px;
 }
@@ -63,13 +87,13 @@ input[type = "text"]{
     padding: 10px 10px 10px 18px;
     margin-bottom: 10px;
     outline: none;
-    background-color: #F0EFFF;
+    background-color: var(--secondary-color-light);
     border: 0;
     border-radius: 5px;
 }
 
 .cancel-Btn{
-    color: #FF6584;
+    color: var(--primary-color);
     position: absolute;
     top: 10px;
     right: 15px;
@@ -77,11 +101,11 @@ input[type = "text"]{
 }
 
 input[type = "text"]:focus-within{
-    border: 1px solid #5D5FEF;
+    border: 1px solid var(--secondary-color-hover);
 }
 
 .output{
-    background-color: #f0f8ff;
+    background-color: var(--secondary-color-light);
     padding: 10px;
     line-height: 1.5rem;
     text-align: center;
@@ -94,7 +118,7 @@ button[type = "submit"]{
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: #5D5FEF;  
+    background-color: var(--secondary-color);  
     text-transform: uppercase;
     transition: background 1s;
     color: #fff;
@@ -103,7 +127,7 @@ button[type = "submit"]{
 }
 
 button[type = "submit"]:hover{
-    background-color: #474aee;
+    background-color: var(--secondary-color-hover);
 }
 
 button[type = "reset"]{
@@ -113,7 +137,7 @@ button[type = "reset"]{
     outline: none;
     border: none;
     cursor: pointer;
-    background-color: #FF6584;
+    background-color: var(--primary-color);
     text-transform: uppercase;
     transition: background 1s;
     color: #fff;
@@ -130,6 +154,11 @@ button[type = "reset"]{
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
+    color: var(--text-color);
+}
+
+#author-data a{
+    color: var(--primary-color);
 }
 
 #author-data:nth-child(1n){
