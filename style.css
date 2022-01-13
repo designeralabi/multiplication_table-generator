@@ -98,6 +98,7 @@ input[type = "text"]{
     top: 10px;
     right: 15px;
     cursor: pointer;
+    visibility: hidden;
 }
 
 input[type = "text"]:focus-within{
