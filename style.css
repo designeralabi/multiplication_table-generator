@@ -12,7 +12,7 @@
 .main-wrapper{
     width: 80%;
     max-width: 700px;
-    margin: 10% auto;
+    margin: 5% auto 10%;
     transform: translateY(120px);
     position: relative;
     text-align: center;
@@ -110,6 +110,8 @@ button[type = "reset"]{
 
 #author-data{
     margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 #author-data:nth-child(1n){
