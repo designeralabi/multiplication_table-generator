@@ -1,0 +1,22 @@
+{
+  "name": "multiplication-table-generator",
+  "version": "1.0.0",
+  "description": "multiplication table generator",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/designeralabi/multiplication_table-generator.git"
+  },
+  "author": "designeralabi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/designeralabi/multiplication_table-generator/issues"
+  },
+  "homepage": "https://github.com/designeralabi/multiplication_table-generator#readme",
+  "dependencies": {
+    "vite": "^2.7.10"
+  }
+}
