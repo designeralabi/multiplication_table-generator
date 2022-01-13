@@ -143,6 +143,7 @@ button[type = "reset"]{
     transition: background 1s;
     color: #fff;
     font-weight: 600;
+    border-radius: 5px;
 }
 
 ::placeholder{
