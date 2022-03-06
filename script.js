@@ -12,13 +12,17 @@ form.addEventListener('submit', (evt)=>{
     var msg = '';
     var userInput = Number(userNum.value);
     var by = 1;
-    if (typeof userInput === 'number'){
-        while (userInput <= 12, by <= 100 ) {
-            msg += userInput + ` x ${by} = ` + (userInput * by + '<br />');
+ 
+    if (!userInput)
+        return;  
+ 
+    while (true) {
+       if (by > 100)
+           break;
+        msg += userInput + ` x ${by} = ` + (userInput * by + '<br />');
+        by++;
+    }   
        
-            by++;
-        }   
-    }    
 
     genOutput.innerHTML = msg;
 
