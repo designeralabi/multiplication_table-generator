@@ -1,36 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="shortcut icon" href="/assets/img/multiplicate-icon.png" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      rel="shortcut icon"
+      href="/assets/img/multiplicate-icon.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <title>MultiplicateIt</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-wrapper">
-        <h1>Multiplication-table Generator</h1>
-        <img src="/assets/img/back-to-school.png" alt="back-to-school">
-        <p id="data-cta">The quick solution you have been looking for to generate multiplication table.</p>
-        <form class="form-wrapper">
-            <input type="text" placeholder="enter mult(value) to generate" id="num">
-            <span class="material-icons cancel-Btn">cancel</span>
-            <p id="data-caution">Please note that this Times Table generator generates Multiplication table from 1 to 100 only.</p>
-            <button type="submit">Generate</button>
-            <button type="reset" id="reset-btn">clear</button>
-        </form>
-        <p class="output"></p>
-        <div id="author-data">
-            <span>Copyright © 2022 <a href="https://designbyalabi.dev/">designbyalabi.</a></span>
-            <span>
-                <a href="https://github.com/designeralabi">Github</a> | 
-                <a href="https://wa.link/c7wjjv">Whatsapp</a>
-            </span>
+      <h1>Multiplication-table Generator</h1>
+      <img src="/assets/img/back-to-school.png" alt="back-to-school" />
+      <p id="data-cta">
+        The quick solution you have been looking for to generate multiplication
+        table.
+      </p>
+      <form class="form-wrapper">
+        <div class="form_input_wrapper">
+          <input
+            type="text"
+            placeholder="enter mult(value) to generate"
+            id="num"
+          />
+          <input type="text" placeholder="input tables" id="gen_value" />
         </div>
+
+        <span class="material-icons cancel-Btn">cancel</span>
+        <p id="data-caution">
+          Please note that this Times Table generator generates Multiplication
+          table from 1 to 100 only.
+        </p>
+        <button type="submit">Generate</button>
+        <button type="reset" id="reset-btn">clear</button>
+      </form>
+      <p class="output"></p>
+      <div id="author-data">
+        <span
+          >Copyright © 2022
+          <a href="https://designbyalabi.dev/">designbyalabi.</a></span
+        >
+        <span>
+          <a href="https://github.com/designeralabi">Github</a> |
+          <a href="https://wa.link/c7wjjv">Whatsapp</a>
+        </span>
+      </div>
     </div>
-   <script src="script.js" type="text/javascript"></script>
-</body>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
 </html>
